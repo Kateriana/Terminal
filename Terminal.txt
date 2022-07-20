@@ -1,0 +1,42 @@
+pwd - где я
+mkdir foldrename - создать папку
+cd foldername - заайти в папку
+cd .. - подняться в папку уровнем выше
+cd .. /.. - подняться на 2 уровня выше
+
+ls - показывает содержимое папки
+ls -a показываетс элементы в папке, в том числе скрытые
+ls -la 
+ls -l  показывает данные файлы списком
+ls - la qa_1/  - что есть в этой папке
+
+
+cat file.txt  просмотр содержимого файла
+cat > file.txt создать файл file.txt и сразу наполнить его содержанием
+cat >> file.txt добавить строки в уже существующий файл
+				ctrl + C выход из режима редактирования. после каждой строчик обязательно Enter
+
+cat > foldername/file.txt  создает и открывает в режиме редактирования файл в нужной папке
+
+cat file1.txt file2.txt > file3.txt из двух файлов объединяет строки и записывает их в новый файл
+
+touch file.txt создать файл
+rm file.txt удаляет файл из текущего каталога
+rmdir foldername удаляет все, что есть в папке, а потом и ее
+rm -r foldername 
+mv foldername1/file.txt foldername2/file.txt  перемещает из папки в папку
+mv file1.txt file2.txt перемеименование
+
+cp foldername1/file.txt foldername2/file.txt  копирует из папки в папке
+
+
+grep для поиска строки в файле
+grep -i line file.txt  ищет line без учета регистра
+grep -v 1 file.txt ищет все, кроме 1 
+grep -c line file.txt  количество всех строк, где есть line
+-w точное попадание
+grep -r line folder1  ищет строки в файлах в папке и подпапках этой папке
+
+find .  - name file.txt
+find .  - name "*png" ищет все файлы png
+find .  - name "*png" -delete -print  удаляет все файлы png  в папке, где мы есть
